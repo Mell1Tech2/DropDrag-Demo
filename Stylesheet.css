@@ -1,0 +1,108 @@
+/* Standard */
+.img_standard {
+	height: 400px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.box1 {
+  height: 50px;
+  border: 3px solid #666;
+  background-color: #ec1c24;
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+}
+.box2 {
+  height: 50px;
+  border: 3px solid #666;
+  background-color: #1c84ec;
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+}
+.box3 {
+  height: 50px;
+  border: 3px solid #666;
+  background-color: #4dec1c;
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+}
+
+/* Custom CSS */
+.custom-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+#border {
+	color: #ba9bd4;
+}
+.entry-title {
+display: none;
+}
+.divider {
+    height: 50px	;
+    background-color: #ba9bd4;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+}
+.site-info {
+  font-size: 0.8125rem;
+  color: #586674;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+	text-align: left;
+}
+
+/* Bootstrap Overide Rules */
+.display-3 h1 {
+	line-height: 1 !important;
+}
+.text-primary {
+	color: #6a3d9a !important;
+}
+.bg-primary {
+	background-color: #6a3d9a !important;
+}
+.border-primary {
+	border-color: #6a3d9a !important;
+}
+.text-secondary {
+	color: #ba9bd4 !important;
+}
+.bg-secondary {
+	background-color: #ba9bd4 !important;
+}
+.border-secondary {
+	border-color: #ba9bd4 !important;
+}
+.form-label {
+	margin-bottom: auto;
+}
+
+/* Media Rules */
+@media only screen and (min-width: 767px) {
+	.block_viewport {
+		height: 500px;
+	}
+	.block_viewport_small {
+		height: 400px;
+	}
+	.divider {
+		height: 100px;
+	}
+}
+@media only screen and (max-width: 769px) {
+  #primary {
+    max-width: 800px;
+  }
+	.img_standard {
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
